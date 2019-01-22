@@ -1,0 +1,99 @@
+/*Heading*/
+h1 {
+	color: #ffffff;
+	background-color: #215132;
+	text-align:center;
+	/*font-family: "Arial", sans-serif;*/
+	font-family: "Helvetica", sans-serif;
+	font-size: 30px;
+	border-width: 2px;
+	border-style: dashed;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding: 20px;
+	border-color: black;
+	border-radius: 15px;
+}
+h2 {
+	color: rgba(36, 89, 50, 0.6);
+	text-align:center;
+	font-family: "Courier New";
+	font-size: 0.8em;
+}
+h3 {
+	font-family: "Arial";
+	font-size: 15px;
+}
+/*Paragraph Styling*/
+p{
+	color: grey;
+	font-family: "Courier New";
+	font-size: 14px;
+	font-weight: normal;
+	text-align: justify;
+}
+strong {
+	font-weight: bold;
+}
+em {
+	text-decoration: underline;
+}
+/*Table Styling*/
+table.table1 {
+	border-collapse: collapse;
+}
+
+table.table2 {
+	border-collapse: collapse;
+}
+
+table.table1 td, th {
+	border-width: 1px;
+	border-style: solid;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding: 10px;
+	border-color: black;
+	font-family: "Calibri", sans-serif;
+}
+
+table.table1 th {
+	background: rgba(48, 48, 48, 0.8);
+	color: white;
+}
+
+table.table2 td, th {
+	border-width: 1px;
+	border-style: solid;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding: 10px;
+	border-color: black;
+	font-family: "Calibri", sans-serif;
+}
+
+table.table2 th {
+	background: green;
+	color: white;
+}
+
+table.table2 tr:nth-child(even) {
+	background: #cccccc;
+}
+
+table.table2 tr:nth-child(odd) {
+	background: white;
+}
+
+}
+
+#table1 {
+	border-collapse: collapse;
+	border-color: black;
+}
+#table2 {
+	border-collapse: collapse;
+	border-color: black;
+
+
+}
