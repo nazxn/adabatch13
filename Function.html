@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Function</title>
+	<script>
+		function sayHello() {
+			document.write("Hello");
+		}
+
+		/*sayHello();
+		sayHello();
+		sayHello();*/
+
+		/*function getArea(width, height) {
+			return width * height;
+		}
+
+		console.log(getArea(3,5));
+		console.log(getArea(5,5));*/
+
+		function getArea(width, height) {
+			return width * height;
+		}
+
+		function getSize(width, height, depth) {
+			var area = getArea(width, height);
+			var volume = width * height * depth;
+			var size = [area, volume]
+			return size;
+		}
+
+		var size = getSize(3,5,1);
+		var area = size[0];
+		var volume = size[1];
+		console.log("Area: " + area);
+		console.log("Volume: " + volume);
+
+	</script>
+</head>
+<body>
+	<button onclick="sayHello()">Say Hello</button>
+</body>
+</html>
