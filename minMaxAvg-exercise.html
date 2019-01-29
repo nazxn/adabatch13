@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>minMaxAvg Exercise</title>
+	<script>
+		var input = [1, 2, 4, -10];
+
+		function min(array) {
+			Array.prototype.min = function() {
+			return Math.min.apply(null, this);
+		};
+
+			var min = Math.min.apply(null, array);
+			return min;
+		}
+
+		function max(array) {
+			Array.prototype.max = function() {
+			return Math.max.apply(null, array);
+		};
+			var max = Math.max.apply(null, array);
+			return max;
+		}
+
+		function avg(array) {
+
+		var sum = 0;
+		for (var i = 0; i < 4; i++) {
+			sum += array[i]
+		}
+
+		var average = sum/4;
+			return average;
+
+		}
+
+		console.log(min(input));
+		console.log(max(input));
+		console.log(avg(input));
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
