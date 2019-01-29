@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Greeting</title>
+	<script>
+		function greetTime() {
+			var now = new Date();
+			var hours = now.getHours(); // 0-23
+			if (hours >= 7 && hours < 13) {
+				document.write("Good Morning!");
+			} else if (hours >= 13 && hours < 17) {
+				document.write('Good Afternoon!');
+			} else if (hours >= 17 && hours < 19) {
+				document.write('Good Evening!');
+			} else {
+				document.write('Good Night!');
+			}
+		}
+
+		greetTime();
+	</script>
+</head>
+<body>
+
+</body>
+</html>
