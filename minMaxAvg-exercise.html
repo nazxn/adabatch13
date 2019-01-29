@@ -11,23 +11,23 @@
 			return Math.min.apply(null, this);
 		};
 
-			var min = Math.min.apply(null, array);
-			return min;
+			var minimum = Math.min.apply(null, array);
+			return minimum;
 		}
 
 		function max(array) {
 			Array.prototype.max = function() {
 			return Math.max.apply(null, array);
 		};
-			var max = Math.max.apply(null, array);
-			return max;
+			var maximum = Math.max.apply(null, array);
+			return maximum;
 		}
 
 		function avg(array) {
 
 		var sum = 0;
 		for (var i = 0; i < 4; i++) {
-			sum += array[i]
+			sum += array[i];
 		}
 
 		var average = sum/4;
@@ -35,9 +35,19 @@
 
 		}
 
-		console.log(min(input));
+		/*console.log(min(input));
 		console.log(max(input));
-		console.log(avg(input));
+		console.log(avg(input));*/
+
+		function minMaxAvg(array) {
+			var minimum = min(array);
+			var maximum = max(array);
+			var average = avg(array);
+			return [minimum, maximum, average];
+
+		}
+
+		console.log(minMaxAvg(input));
 
 	</script>
 </head>
