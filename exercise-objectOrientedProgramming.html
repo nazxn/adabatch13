@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Exercise: Object Oriented Programming</title>
+</head>
+<body>
+	<script>
+		function BookClass(title, author, pages) {
+			this.title = title;
+			this.author = author;
+			this.pages = pages;
+			this.read = function() {
+				return ++this.pages; // to increase the number of pages, "++" is included before
+			}
+			this.buy = function() {
+				return this.title + " by " + this.author + " has been purchased!"; // to print a sentence, use string. can also use document.write instead of return to print this sentence
+			}
+		}
+		var book = new BookClass("Book Title", "Author", 20);
+
+		console.log(book);
+		console.log(book.read()); // has to be .read() for functions
+		console.log(book.buy()); // for functions: must have brackets at the end. eg .buy()
+
+	</script>
+</body>
+</html>

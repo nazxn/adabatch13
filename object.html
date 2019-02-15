@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Objects</title>
+	<script>
+/*		var hotel = {
+			name: "Quay",
+			rooms: 40,
+			booked: 25,
+			checkAvailability: function() {
+				return this.rooms - this.booked;
+			}
+		}
+		hotel.rooms = 50; // overrides initial .rooms value
+		console.log(hotel);
+		console.log(hotel.name);
+		console.log(hotel.checkAvailability()); */
+
+		function Hotel(name, rooms, booked) { // usually capital letters is reserved for objects/constructors, while everything else - eg. string - starts with small letters
+			this.name = name;
+			this.rooms = rooms;
+			this.booked = booked;
+			this.checkAvailability = function() {
+				return this.rooms - this.booked;
+			}
+		}
+
+		var quayHotel = new Hotel("Quay", 40, 25);
+		var parkHotel = new Hotel("Park", 120, 77);
+		parkHotel.swimmingPool = true; // adds another criteria that's not in the template
+
+		console.log(quayHotel);
+		console.log(parkHotel);
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

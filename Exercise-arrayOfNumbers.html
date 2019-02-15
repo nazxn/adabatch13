@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Exercise - Array of Numbers</title>
+</head>
+<body>
+	<h1>Help me with numbers!</h1>
+	<p>Enter numbers separated by comma (,)
+
+		<input type="text" name="numbers" id="numbers">
+		<button onclick="getNumbers()">Click me</button>
+		<p id="answer"></p>
+		<script>
+		function getNumbers() {
+			var nString = document.getElementById("numbers").value; // string value
+			console.log(nString); // console prints out string value entered
+			var stringArray = nString.split(","); // string value converted to numerical array by the comma
+			console.log(stringArray); // console prints out numerical array
+			var numberArray = stringArray.map(function(x){
+				return Number(x); // numerical array converted to individual numbers
+			});
+			console.log(numberArray); // console prints out individual numbers
+
+			var average = getAverage(numberArray); // step one
+			document.getElementById("answer").innerHTML = average; // step two & prints out value of function getAverage onto web page
+		}
+		function getAverage(array) {
+			var total = 0;
+
+			for(var i = 0; i < array.length; i++) {
+				total += array[i]; // step three
+			}
+
+			return total/array.length; // step four & calculates average of array numbers input
+
+			// step one + step two + step three + step four = getting the average value of the input numbers
+		}
+	</script>
+
+
+		
+
+	</p>
+</body>
+</html>
