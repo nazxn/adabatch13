@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exercise 1</title>
+	<script>
+		//Create a function that will retrieve 2 numbers
+		// It will return the largest number of 2
+		function largestNumber(a,b){
+			if (a>b){
+				return a;
+			} else {
+				return b;
+			}
+		}
+		var result = largestNumber(25,16);
+		console.log(result)
+
+		//Create a function isOdd
+		//This function will return true if the given number is Odd and false if the given number is Even
+		function isOdd(number){
+			if (number % 2 == 0){
+				return false;
+			} else {
+				return true;
+			}
+		}
+		// var result = isOdd(20);
+		// console.log(result)
+		console.log(isOdd(15))
+
+		//Create a function. Call it calculateAvg
+		//It will take three numbers
+		//It will return the average of this 3 numbers
+		function calculateAvg(a,b,c){
+			return((a+b+c)/3);
+		}
+		console.log(calculateAvg(1,2,3))
+
+		// <IMPORTANT>
+		//Create a function isPrime that will return true, if the number given is a Prime Number, and false if it is not.
+		//A prime number is a number that is only divisible by 1 and itself.
+		//A prime number is a number that is not divisible by other number between 2 and the number before itself
+		//eg. 22 is not a prime number, because it is divisable by 1, 2, 11 and 22
+		//23 is a prime number because it is only divisble by 1 and 23
+		//tools: %, if else, boolean, for loop
+		function isPrime(number){
+			//assume first it's true
+			var answer = true;
+			for (i=2; i<number; i++){
+				if (number % i == 0){
+					return false;
+				}
+			}
+			return answer
+		}
+		console.log(isPrime(23))
+	</script>
+</head>
+<body>
+
+</body>
+</html>

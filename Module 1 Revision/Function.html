@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Function</title>
+	<script>
+		//Declaring a function
+		function sayHello(){
+			console.log("Hello");
+		}
+
+		//Invoking a funcction
+		sayHello();
+
+		//Function goodbye with parameter name
+		function sayGoodbye(name){
+			console.log("Goodbye "+name)
+		}
+
+		sayGoodbye("Aliya")
+		sayGoodbye("Nico")
+
+		//Define a function
+		function sumNumber(a,b){
+			var sum = a+b;
+			var message = "The sum of "+a+" and "+b+" is "+sum;
+			console.log(message)
+		}
+		//Invoke the function
+		sumNumber(10,3);
+		sumNumber(101, 2032);
+
+		//Function returns the answer with keyword "return"
+		function minusNumber(a,b){
+			return a-b
+		}
+		var result = minusNumber(10,5);
+		console.log(result)
+		alert(result) //result with appear with a pop up box
+		document.write(result) //result will appear on the page
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
