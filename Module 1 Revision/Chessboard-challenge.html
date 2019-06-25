@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Chessboard Challenge</title>
+	<script>
+
+		var line = 9; // this will create the number
+
+		for (j=0; j<line; j++){ // represents y axis/outer for loop
+			for (i=0; i<line; i++){ // represents x axis/inner for loop
+
+				if ((i+j) % 2 == 0){
+					document.write("#")
+			} else {
+				document.write(" ")
+			}
+		}
+		document.write("<br/>") // has to be outside the inner for loop, but inside the outer for loop
+	}
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>
