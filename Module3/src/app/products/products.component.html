@@ -1,0 +1,25 @@
+<p>My name is {{ name }}. My phone number is {{ phoneNumber }}</p>
+
+<h2 class="bg-red">Product Info</h2>
+<input type="type" name="name" [(ngModel)]="newTshirt.name"> <!-- import FormModule -->
+<h3>{{ newTshirt.name | uppercase }}</h3>
+<h4>{{ newTshirt.brand }}</h4>
+<p>MYR {{ newTshirt.price }}</p>
+
+<h2>Recommended products</h2>
+<ul>
+	<li *ngFor="let item of items" (click)="selectProduct(item)">{{ item.name }} - {{ item.price }}</li>
+</ul>
+<!-- <div *ngIf="selectedProduct">
+	<h3>Selected Product</h3> // bringing out the selectedProduct from .ts
+	<h3>{{selectedProduct.name}}</h3>
+	<h4>{{selectedProduct.brand}}</h4>
+	<p>{{selectedProduct.price}}</p>
+</div>
+// for ROUTING, step 4: cut and paste into product-detail.component.ts -->
+<div>
+	<h3>Product from API</h3>
+	<ul>
+		<li *ngFor="let product of apiProducts">{{product.name}}</li>
+	</ul>
+</div>
